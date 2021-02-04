@@ -1,0 +1,81 @@
+.player {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  background-color: #fff;
+  width: 380px;
+  height: 150px;
+  border-radius: 15px;
+  box-shadow: 0px 25px 35px 3px #ad939b;
+  padding: 10px 30px;
+}
+
+.info {
+  /* position: absolute; */
+  /* top: -50px; */
+  grid-column: 2;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #707070;
+}
+
+.info h3 {
+  font-size: 1rem;
+  margin: 5px 0px;
+}
+
+.info p {
+  font-size: 0.8rem;
+}
+
+.controller {
+  padding: 10px 0px;
+  grid-column: 2;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.controller_button_back,
+.controller_button_play,
+.controller_button_next {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  flex: 1;
+}
+
+.controller_button_play i {
+  color: #c1c3cb;
+}
+
+.controller_button_back i,
+.controller_button_next i {
+  color: #d9d9df;
+}
+
+.controller_button_back {
+  justify-content: flex-start;
+}
+.controller_button_next {
+  justify-content: flex-end;
+}
+
+.controller_progress {
+  /* grid-column: 1/span 3; */
+  background-color: #e5e7eb;
+  height: 5px;
+  border-radius: 5px;
+  flex-basis: 100%;
+}
+
+.disk {
+  position: absolute;
+  top: -25px;
+  left: 30px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-image: url("https://picsum.photos/150/150?random=1");
+}

@@ -3,40 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/music_player.css" />
+    <link rel="stylesheet" href="styles/picture.css" />
+    <link rel="stylesheet" href="styles/showcase.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>Alan NG</title>
   </head>
   <body>
     <header>
-      <a href="" class="toggle">Toggle</a>
-      <h1>
-        <a href="" class="logo">Alan NG</a>
-      </h1>
-      <nav>
-        <ul>
-          <li><a href="">Main</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Archives</a></li>
-          <li><a href="">Tags</a></li>
-          <li><a href="">Challenges</a></li>
-        </ul>
-      </nav>
+      <div class="navbar">
+        <div class="container flex">
+          <h1>
+            <a href="" class="logo">Alan NG</a>
+          </h1>
+          <nav>
+            <ul>
+              <li><a href="">Main</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Archives</a></li>
+              <li><a href="">Tags</a></li>
+              <li><a href="">Challenges</a></li>
+            </ul>
+          </nav>
+          <a href="" class="float-left hidden">
+            <i class="fas fa-bars"></i>
+          </a>
+        </div>
+      </div>
     </header>
     <main class="main">
-      <article class="right-part">
-        <section class="section-music">
-          Hello World
+      <div class="container flex">
+        <section class="showcase">
+          <div class="showcase_content">
+            <div class="showcase_item active">
+              <img
+                src="./media/image/multiplication_app1.png"
+                alt="Multiplication App"
+              />
+            </div>
+            <div class="showcase_item">
+              <img
+                src="./media/image/multiplication_app2.png"
+                alt="Multiplication App"
+              />
+            </div>
+            <div class="showcase_item">
+              <img
+                src="./media/image/multiplication_app3.png"
+                alt="Multiplication App"
+              />
+            </div>
+          </div>
+          <div class="showcase_button_back">
+            <i class="fas fa-angle-left"></i>
+          </div>
+          <div class="showcase_button_next">
+            <i class="fas fa-angle-right"></i>
+          </div>
         </section>
-        <section class="section-picture">
+        <section class="component">
+          <div class="component_music_player">
+            <div class="player">
+              <div class="info">
+                <h3>Hello World</h3>
+                <p>Ice Cube</p>
+              </div>
+              <div class="disk"></div>
+              <div class="controller">
+                <div class="controller_button_back">
+                  <i class="fas fa-step-backward"></i>
+                </div>
+                <div class="controller_button_play">
+                  <i class="fas fa-play"></i>
+                </div>
+                <div class="controller_button_next">
+                  <i class="fas fa-step-forward"></i>
+                </div>
+                <div class="controller_progress">
+                  <div class="controller_progress_filled"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer py-2">
+      <div class="container grid">
+        <div>
+          <h3>Alan Ng</h3>
+          <p>Copyright &copy; 2021</p>
+        </div>
+        <div class="footer_picture">
           <div class="picture">
             <svg
-              width="560"
-              height="412"
+              width="300"
+              height="300"
               viewBox="0 0 1077 756"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <rect width="560" height="412" />
+              <rect width="300" height="300" />
               <g id="web_develop" clip-path="url(#clip0)">
                 <g id="human-web">
                   <path
@@ -258,12 +332,8 @@
               </defs>
             </svg>
           </div>
-        </section>
-      </article>
-    </main>
-
-    <footer>
-      Hello World
+        </div>
+      </div>
     </footer>
 
     <script
@@ -281,5 +351,6 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="script/script.js"></script>
   </body>
 </html>
